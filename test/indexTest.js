@@ -1,78 +1,34 @@
 const expect = chai.expect;
 
 
+describe('Uses variable that will not change', function() {
+  describe('companyName', function() {
+    it('is set as Scuber', () => {
+      expect(companyName).to.equal('Scuber')
+    })
 
-describe('Arrays', function() {
-  beforeEach(() => {
-    drivers = ['Milo', 'Otis', 'Garfield'];
-  })
-
-  describe('drivers', function() {
-    it('defines drivers as `var drivers = ["Milo", "Otis", "Garfield"]`', function() {
-      expect(drivers).to.have.ordered.members(["Milo", "Otis", "Garfield"])
+    it('raises error if the companyName is changed', () => {
+      expect(() => { companyName = 'specialCompany'}).to.throw(TypeError)
     })
   })
 
-  describe('destructivelyAppendDriver(name)', function() {
-    it('appends a driver to the end of the drivers array', function() {
-      destructivelyAppendDriver('Ralph')
-      expect(drivers).to.have.ordered.members(["Milo", "Otis", "Garfield", "Ralph"])
+  describe('mostProfitableNeighborhood', function() {
+    it('is declared as equal to Chelsea', function() {
+      expect(mostProfitableNeighborhood).to.equal('Chelsea')
+    })
+
+    it('does not raise error if the mostProfitableNeighborhood is changed', function(){
+      expect(() => { mostProfitableNeighborhood = 'Upper West Side'}).to.not.throw(TypeError)
     })
   })
 
-  describe('destructivelyPrependDriver(name)', function() {
-    it('prepends a driver to the beginning of the drivers array', function() {
-      destructivelyPrependDriver("Bob")
+  describe('companyCeo', function() {
+    it('is declared as equal to Chelsea', function() {
+      expect(companyCeo).to.equal('Susan Smith')
+    })
 
-      expect(drivers).to.have.ordered.members(["Bob", "Milo", "Otis", "Garfield"])
+    it('does not raise error if the companyCeo is changed', function(){
+      expect(() => { companyCeo = 'Lauren Hart'}).to.not.throw(TypeError)
     })
   })
-
-  describe('destructivelyRemoveLastDriver()', function() {
-    it('removes the last driver from the drivers array', function() {
-      destructivelyRemoveLastDriver()
-
-      expect(drivers).to.have.ordered.members(["Milo", "Otis"]).and.to.not.include('Garfield')
-    })
-  })
-
-  describe('destructivelyRemoveFirstDriver()', function() {
-    it('removes the First driver from the drivers array', function() {
-      destructivelyRemoveFirstDriver()
-
-      expect(drivers).to.have.ordered.members(["Otis", "Garfield"]).and.to.not.include('Milo')
-    })
-  })
-
-  describe('appendDriver(name)', function() {
-    it('appends a driver to the drivers array and returns a new array, leaving the drivers array unchanged', function() {
-      expect(appendDriver("Broom")).to.have.ordered.members(["Milo", "Otis", "Garfield", "Broom"])
-
-      expect(drivers).to.have.ordered.members(["Milo", "Otis", "Garfield"])
-    })
-  })
-
-  describe('prependDriver(name)', function() {
-    it('prepends a driver to the drivers array and returns a new array, leaving the drivers array unchanged', function() {
-      expect(prependDriver("Arnold")).to.have.ordered.members(["Arnold", "Milo", "Otis", "Garfield"])
-
-      expect(drivers).to.have.ordered.members(["Milo", "Otis", "Garfield"])
-    })
-  })
-
-  describe('removeLastDriver()', function() {
-    it('removes the last driver in the drivers array and returns a new array, leaving the drivers array unchanged', function() {
-      expect(removeLastDriver()).to.have.ordered.members(["Milo", "Otis"])
-
-      expect(drivers).to.have.ordered.members(["Milo", "Otis", "Garfield"])
-    })
-  })
-
-  describe('removeFirstDriver()', function() {
-    it('removes the first driver from the drivers array and returns a new array, leaving the drivers array unchanged', function() {
-      expect(removeFirstDriver()).to.have.ordered.members(["Otis", "Garfield"])
-      expect(drivers).to.have.ordered.members(["Milo", "Otis", "Garfield"])
-    })
-  })
-
 })
