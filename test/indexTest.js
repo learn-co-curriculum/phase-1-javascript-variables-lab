@@ -1,6 +1,6 @@
 const expect = chai.expect;
 
-describe('Uses variable that will not change', function() {
+describe('Using Variables', function() {
   describe('companyName', function() {
     it('is set as Scuber', () => {
       expect(companyName).to.equal('Scuber')
@@ -20,7 +20,7 @@ describe('Uses variable that will not change', function() {
       expect(() => { mostProfitableNeighborhood = 'Upper West Side'}).to.not.throw(TypeError)
     })
   })
-  
+
   describe('companyCeo', function() {
     it('is declared as equal to Chelsea', function() {
       expect(companyCeo).to.equal('Susan Smith')
