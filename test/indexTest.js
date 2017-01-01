@@ -1,7 +1,7 @@
 const expect = chai.expect;
 
 
-describe('Uses variable that will not change', function() {
+describe('Variable Names', function() {
   describe('companyName', function() {
     it('is set as Scuber', () => {
       expect(companyName).to.equal('Scuber')
