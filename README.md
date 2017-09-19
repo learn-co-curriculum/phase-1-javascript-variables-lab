@@ -1,35 +1,15 @@
-JavaScript Arrays Lab
+JavaScript Variables Lab
 ---
 
 ## Objectives
 
-1. Practice writing arrays
-2. Practice manipulating arrays
-3. Explain how to manipulate arrays in a non-destructive way
+- Practice using the `const` and `let` variables in JavaScript
 
-## Introduction
+## Instructions
 
-Previously, we've learned about how arrays work. We know that `push()` pushes elements onto the ends of arrays, and `pop()` pops them off; similarly, `unshift()` adds elements to the beginnings of arrays, and `shift()` pulls them off.
+In this lab, you'll need to declare some variables using `const` and `let`.
 
-Now it's time to put what we've learned to the test.
-
-## What's with all this destruction?
-
-You might have noticed that our tests are looking for functions like `destructivelyAppendDriver()` — what's up with that?
-
-We want to distinguish between actions that _mutate_ ("change") their underlying structures (like `pop()`, `push()`, `shift()`, and `unshift()`) and those functions that leave those structures untouched.
-
-In general, it's good practice to avoid mutating a program's state whenever possible. So we want to call out these methods as destructive, since mutating state means we don't always know what we're dealing with. Indeed, these mutations mean that we need to refresh the test environment after every test to make sure that we're not working with mutated data!
-
-By contrast, we also have methods like `appendDriver()`, which simply adds a driver to the end of the `drivers` array and returns the _new_ array, leaving the existing array untouched. This flow is preferable to mutating state because we have complete control over what's going into and coming out of the function.
-
-## Run those tests!
-
-You'll notice that the first test asks for an array called `drivers`, set to an initial value of `["Milo", "Otis", "Garfield"]`.
-
-In our test file, we're going to reset this array to your initial value after every test. Some of our tests manipulate arrays in place, and we want to be sure that we can get back to a blank slate between tests.
-
-Why is a blank slate important? We want our programs to be predictable: this makes them more robust, easier to maintain, and less prone to bugs. One way to achieve predictability is by isolating our tests from one another, meaning that no test should depend on the outcome or process of any other test. That way, tests can run in any order and test _known_ inputs and environments, rather than depending on other tests running first and modifying the entire environment.
+As usual, start by running the specs and reading the results.
 
 Remember the workflow:
 
@@ -43,8 +23,22 @@ Remember the workflow:
 
 5. Run `learnsubmit` when finished!
 
-If you open up `test/indexTest.js`, you will see that in the `beforeEach` block we initialize our `driver` array values so that you can focus on what really matters — understanding how to manipulate arrays in JavaScript.
+
+## Working Through The Problems
+
+If you open up `test/indexTest.js`, you will see the tasks in front of you.
+
++ `companyName` - Inside the `test/indexTest`, look inside of the word `describe` where the tests are trying to indicate that this test is describing the `companyName` variable.  The `it` word that comes afterwords, tells us the features of `companyName`.  In the first `it` function call, it says that `it` (companyName) `is set as Scuber`.  In the next line, you can see that the test checks to make sure this occurs by seeing if `companyName` equals `Scuber`.  So this means that you need to go to your `index.js` file and declare a variable named `companyName` and set it equal to `Scuber`.  Once you do that, if `learn-test` is running, you will see the first test in this lab as passing.  
+
+In the next `it` function call, we are still describing `companyName`.  This time, it says it `raises error if the companyName is changed`. The next line of code tests this.  It's ok if some of the code in that line are confusing.  Just know that the code attempts to change `companyName` to a different value, and that this reassignment to throw an error.  So you need to make sure that you are using the correct variable type such that reassigning the variable would throw an error.
+
++ `mostProfitableNeighborhood` - Here we need to declare another variable, `mostProfitableNeighborhood` and assign it to `Chelsea`.  In the next `it` function call, you can see that our tests ensure that `mostProfitableNeighborhood` does not throw an error when reassigned.  So you need to make sure that you are using the correct variable type such that reassigning the `mostProfitableNeighborhood` would not throw an error.
+
++ `companyCeo` - Here, we are getting more practice with declaring variables.  Once again, a reassignment should not throw an error.  
 
 ## Resources
+
+- [MDN: Let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+- [MDN: Const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/javascript-array-lab'>Javascript Array Lab</a> on Learn.co and start learning to code for free.</p>

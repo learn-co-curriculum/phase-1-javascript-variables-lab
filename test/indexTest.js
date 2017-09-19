@@ -22,7 +22,7 @@ describe('Using Variables', function() {
   })
 
   describe('companyCeo', function() {
-    it('is declared as equal to Chelsea', function() {
+    it('is declared as equal to Susan Smith', function() {
       expect(companyCeo).to.equal('Susan Smith')
     })
 
