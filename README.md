@@ -41,4 +41,4 @@ In the next `it` function call, we are still describing `companyName`.  This tim
 - [MDN: Let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 - [MDN: Const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
 
-<p class='util--hide'>View <a href='https://learn.co/lessons/javascript-array-lab'>Javascript Array Lab</a> on Learn.co and start learning to code for free.</p>
+<p class='util--hide'>View <a href='https://learn.co/lessons/js-basic-variables-lab'>Javascript Variables Lab</a> on Learn.co and start learning to code for free.</p>
