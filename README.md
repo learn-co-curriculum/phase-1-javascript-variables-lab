@@ -96,7 +96,7 @@ Ok, so we'll let you work through the problems below.  But in summary here is yo
 
 4. Repeat as needed for further tests.
 
-5. Run `learnsubmit` when finished!
+5. Run `learn submit` when finished!
 
 
 ## Working Through The Problems
