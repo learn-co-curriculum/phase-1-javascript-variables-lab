@@ -33,6 +33,6 @@ jspm_packages/
 # macOS system directory file
 .DS_Store
 
-# Learn.co files
-.results.json
-learn.auth.data.json
+# Package lockfiles
+package-lock.json
+yarn.lock
