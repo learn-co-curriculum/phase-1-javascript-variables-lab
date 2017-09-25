@@ -2,9 +2,10 @@ tags:
   - learn.co
   - flatiron school
   - javascript
-  - strings
-  - code-along
+  - variables
+  - let
+  - const
 languages:
   - javascript
 resources:
-  - 9
+  - 2
