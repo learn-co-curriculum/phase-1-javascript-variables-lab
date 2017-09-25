@@ -72,9 +72,9 @@ Don't worry too much yet if it's hard to understand what is happening inside of 
 
 ## Running the Tests
 
-To run the tests, simply type `learn-test` in the terminal part of the Learn IDE. (The terminal is the part below where you've been coding.)
+To run the tests, simply type `learn` in the terminal part of the Learn IDE. (The terminal is the part below where you've been coding.)
 
-Running the `learn-test` command will open up a new tab on your browser, showing the current status of the tests.  For the moment, all of the tests fail. Let's figure out how to get one of them passing! (The rest will be up to you.)
+Running the `learn` command will open up a new tab on your browser, showing the current status of the tests.  For the moment, all of the tests fail. Let's figure out how to get one of them passing! (The rest will be up to you.)
 
 To get our first test to pass, we can open up our `index.js` file, and write the following:
 
@@ -88,7 +88,7 @@ Great, our first test is now passing. Except the second test is also about `comp
 
 Ok, so we'll let you work through the problems below.  But in summary here is your workflow for a lab:
 
-1. Run `learn-test`.
+1. Run `learn`.
 
 2. Read the errors; vocalize what they're asking you to do.
 
@@ -103,7 +103,7 @@ Ok, so we'll let you work through the problems below.  But in summary here is yo
 
 If you open up `test/indexTest.js`, you will see the tasks in front of you.
 
-+ `companyName` - Inside the `test/indexTest`, look inside of the word `describe` where the tests are trying to indicate that this test is describing the `companyName` variable.  The `it` word that comes afterwords, tells us the features of `companyName`.  In the first `it` function call, it says that `it` (companyName) `is set as Scuber`.  In the next line, you can see that the test checks to make sure this occurs by seeing if `companyName` equals `Scuber`.  So this means that you need to go to your `index.js` file and declare a variable named `companyName` and set it equal to `Scuber`.  Once you do that, if `learn-test` is running, you will see the first test in this lab as passing.  
++ `companyName` - Inside the `test/indexTest`, look inside of the word `describe` where the tests are trying to indicate that this test is describing the `companyName` variable.  The `it` word that comes afterwords, tells us the features of `companyName`.  In the first `it` function call, it says that `it` (companyName) `is set as Scuber`.  In the next line, you can see that the test checks to make sure this occurs by seeing if `companyName` equals `Scuber`.  So this means that you need to go to your `index.js` file and declare a variable named `companyName` and set it equal to `Scuber`.  Once you do that, if `learn` is running, you will see the first test in this lab as passing.  
 
 In the next `it` function call, we are still describing `companyName`.  This time, it says it `raises error if the companyName is changed`. The next line of code tests this.  It's ok if some of the code in that line are confusing.  Just know that the code attempts to change `companyName` to a different value, and that this reassignment to throw an error.  So you need to make sure that you are using the correct variable type such that reassigning the variable would throw an error.
 
