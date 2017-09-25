@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/learn-co-curriculum/js-basics-variables-lab#readme",
   "devDependencies": {
-    "learn-browser": "^0.1.6"
+    "learn-browser": "^0.1.13"
   }
 }
