@@ -70,7 +70,7 @@ describe('index.js', function () {
 hold our tests. After the word `describe` is information about our tests. Tests
 are used as a way to document the behavior of a function to developers. For
 example, the next word `describe` is followed by the word `companyName` name.
-Here the test is telling us that the tests that come afterwords will be about
+Here the test is telling us that the tests that come afterwards will be about
 `companyName`. Then comes the word `it`, where you see the following:
 
 ```js
