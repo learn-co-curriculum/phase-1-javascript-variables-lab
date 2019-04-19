@@ -1,5 +1,13 @@
 const chai = require('chai')
 const expect = chai.expect;
+const fs = require('file-system')
+const jsdom = require('mocha-jsdom')
+const path = require('path')
+const babel = require('babel-core');
+
+const js = fs.readFileSync(path.resolve(__dirname, '..', 'index.js'), 'utf-8')
+
+
 
 describe('index.js', function () {
   describe('companyName', function () {
@@ -7,8 +15,8 @@ describe('index.js', function () {
       expect(companyName).to.equal('Scuber');
     });
 
-    it('raises error if the companyName is changed', function () {
-      expect(function () { companyName = 'specialCompany' }).to.throw(TypeError);
+    it('is defined as a const', function () {
+      expect(js).to.match(/const companyName/, "Expected companyName to be a const");
     });
   });
 
