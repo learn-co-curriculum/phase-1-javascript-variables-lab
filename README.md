@@ -140,7 +140,6 @@ If you open up `test/indexTest.js`, you will see the tasks in front of you:
 + `companyCeo` - Here, we are getting more practice with declaring variables. Once again, a reassignment should not throw an error.
 
 ## Resources
+
 - [MDN: Let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 - [MDN: Const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/js-basics-variables-lab'>Variables Lab</a> on Learn.co and start learning to code for free.</p>
