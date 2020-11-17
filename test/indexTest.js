@@ -25,8 +25,8 @@ describe('index.js', function () {
       expect(mostProfitableNeighborhood).to.equal('Chelsea');
     });
 
-    it('does not raise error if the mostProfitableNeighborhood is changed', function () {
-      expect(function () { mostProfitableNeighborhood = 'Upper West Side' }).to.not.throw(TypeError);
+    it('is defined using let', function () {
+      expect(js).to.match(/let mostProfitableNeighborhood/, "Expected mostProfitableNeighborhood to be defined using let");
     });
   });
 
@@ -35,8 +35,8 @@ describe('index.js', function () {
       expect(companyCeo).to.equal('Susan Smith');
     });
 
-    it('does not raise error if the companyCeo is changed', function () {
-      expect(function () { companyCeo = 'Lauren Hart' }).to.not.throw(TypeError);
+    it('is defined using let', function () {
+      expect(js).to.match(/let companyCeo/, "Expected companyCeo to be defined using let");
     });
   });
 });
