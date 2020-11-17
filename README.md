@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-We've covered a lot of JavaScript concepts, but now it's time to put the concepts in to practice. We'll start with variables.
+We've covered a lot of JavaScript concepts, but now it's time to put the concepts into practice. We'll start with variables.
 
 ## Objectives
 
@@ -26,8 +26,8 @@ in charge of getting the tests to pass.
 
 ### Structure
 
-The structure of this lab — where its files and folders are located — looks
-roughly like the following:
+The structure of this lab &mdash; where its files and folders are located
+&mdash; looks roughly like the following:
 
 ```
 ├── CONTRIBUTING.md
@@ -101,12 +101,11 @@ gather the information that you can. We will also provide instructions in the
 
 ## Running the Tests
 
-To run the tests, type `learn` in the terminal part of the Learn IDE.
-(The terminal is the part below where you've been coding.)
-
-Running the `learn` command will open up a new tab on your browser, showing the
-current status of the tests. For the moment, all of the tests fail. Let's figure
-out how to get one of them passing! (The rest will be up to you.)
+To run the tests, type `learn` or `learn test` in the terminal. (If you're using
+the IDE, the terminal is the part below where you've been coding.) You should
+now see the current status of the tests in the terminal. For the moment, all of
+the tests fail. Let's figure out how to get one of them passing! (The rest will
+be up to you.)
 
 To get our first test to pass, we can open up our `index.js` file, and write the
 following:
@@ -115,11 +114,11 @@ following:
 let companyName = 'Scuber';
 ```
 
-Great, our first test is now passing. However, the second test that is also about
-`companyName` is not yet passing. It's not passing because, it expects a change to
-`companyName` to throw a `TypeError`. It sounds like it wants `companyName` to
-be declared using a different keyword than the `let` keyword - it needs a
-keyword that is used for variables that can't be changed...
+If you run `learn` again, you'll see that our first test is now passing.
+However, the second test, which is also about `companyName`, is not yet passing.
+It's not passing because it expects `companyName` to be declared using a
+different keyword than the `let` keyword &mdash; it needs a keyword that is used
+for variables that can't be changed...
 
 Continue to work through the problems below. Keep in mind the general workflow
 for a lab:
@@ -128,18 +127,18 @@ for a lab:
 2. Read the errors; vocalize what they're asking you to do.
 3. Write code; repeat steps 1 and 2 often until a test passes.
 4. Repeat as needed for further tests.
-5. Run `learn submit` when finished!
+5. Unless you're working in Canvas, run `learn submit` when finished!
 
 ## Working Through the Problems
 
 If you open up `test/indexTest.js`, you will see the tasks in front of you:
 
-+ `companyName` - Inside the `test/indexTest.js` file, look inside of the word `describe` where the tests are trying to indicate that this test is describing the `companyName` variable. The `it` word that comes afterwards, tells us the features of `companyName`. In the first `it` function call, it says that `it` (companyName) `is set as Scuber`. In the next line, you can see that the test checks to make sure this occurs by seeing if `companyName` equals `Scuber`. So this means that you need to go to your `index.js` file and declare a variable named `companyName` and set it equal to `Scuber`. Once you do that, if `learn` is running, you will see the first test in this lab as passing.
-+ In the next `it` function call, we are still describing `companyName`. This time, it says it `raises error if the companyName is changed`. The next line of code tests this. It's ok if some of the code in that line is confusing. Just know that the code attempts to change `companyName` to a different value, and that this reassignment should throw an error. So you need to make sure that you are using the correct type of variable declaration such that attempting to reassign the variable throws an error.
-+ `mostProfitableNeighborhood` - Here we need to declare another variable, `mostProfitableNeighborhood` and assign to it the string `'Chelsea'`. In the next `it` function call, you can see that our tests ensure that `mostProfitableNeighborhood` does not throw an error when reassigned. So you need to make sure that you are using the correct type of variable declaration such that assigning a new value to `mostProfitableNeighborhood` doesn't throw an error.
-+ `companyCeo` - Here, we are getting more practice with declaring variables. Once again, a reassignment should not throw an error.
++ `companyName` - Inside the `test/indexTest.js` file, look inside of the word `describe` where the tests are trying to indicate that this test is describing the `companyName` variable. The `it` word that comes afterwards, tells us the features of `companyName`. In the first `it` function call, it says that `it` (companyName) `is set as Scuber`. In the next line, you can see that the test checks to make sure this occurs by seeing if `companyName` equals `Scuber`. So this means that you need to go to your `index.js` file and declare a variable named `companyName` and set it equal to `Scuber`. Once you do that, run `learn` and you will see the first test in this lab is passing.
++ In the next `it` function call, we are still describing `companyName`. This time, it says it `is defined as a const`. The next line of code tests this. So you need to make sure that you are using the correct type of variable declaration such that attempting to reassign the variable throws an error.
++ `mostProfitableNeighborhood` - Here we need to declare another variable, `mostProfitableNeighborhood` and assign to it the string `'Chelsea'`. In the next `it` function call, you can see that you need to make sure that you are using the correct type of variable declaration such that assigning a new value to `mostProfitableNeighborhood` doesn't throw an error.
++ `companyCeo` - Here, we are getting more practice with declaring variables. Once again, we want to use a variable declaration that allows reassignment.
 
 ## Resources
 
-- [MDN: Let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
-- [MDN: Const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
++ [MDN: Let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
++ [MDN: Const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
