@@ -1,4 +1,4 @@
-# JavaScript Variables Lab
+# Review: Variables Lab
 
 ## Learning Goals
 
