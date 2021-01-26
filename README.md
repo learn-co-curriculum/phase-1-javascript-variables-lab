@@ -1,17 +1,13 @@
 # JavaScript Variables Lab
 
-## Problem Statement
+## Learning Goals
 
-We've covered a lot of JavaScript concepts, but now it's time to put the concepts into practice. We'll start with variables.
-
-## Objectives
-
-1. Practice using the `const` and `let` variables in JavaScript
+- Practice using the `const` and `let` variables in JavaScript
 
 ## Instructions
 
-You might notice a few new things in this lesson that we haven't encountered
-before. Don't worry, we'll walk you through them.
+We've covered a lot of JavaScript concepts, but now it's time to put the
+concepts into practice. We'll start with variables.
 
 ### Tests
 
@@ -29,7 +25,7 @@ in charge of getting the tests to pass.
 The structure of this lab &mdash; where its files and folders are located
 &mdash; looks roughly like the following:
 
-```
+``` text
 ├── CONTRIBUTING.md
 ├── LICENSE.md
 ├── README.md
@@ -69,8 +65,8 @@ describe('index.js', function () {
 `describe` is a function provided by our test library, Mocha, and it's used to
 hold our tests. After the word `describe` is information about our tests. Tests
 are used as a way to document the behavior of a function to developers. For
-example, the next word `describe` is followed by the word `companyName` name.
-Here the test is telling us that the tests that come afterwards will be about
+example, the next word `describe` is followed by the word `companyName`. Here
+the test is telling us that the tests that come afterwards will be about
 `companyName`. Then comes the word `it`, where you see the following:
 
 ```js
@@ -133,12 +129,23 @@ for a lab:
 
 If you open up `test/indexTest.js`, you will see the tasks in front of you:
 
-+ `companyName` - Inside the `test/indexTest.js` file, look inside of the word `describe` where the tests are trying to indicate that this test is describing the `companyName` variable. The `it` word that comes afterwards, tells us the features of `companyName`. In the first `it` function call, it says that `it` (companyName) `is set as Scuber`. In the next line, you can see that the test checks to make sure this occurs by seeing if `companyName` equals `Scuber`. So this means that you need to go to your `index.js` file and declare a variable named `companyName` and set it equal to `Scuber`. Once you do that, run `learn` and you will see the first test in this lab is passing.
-+ In the next `it` function call, we are still describing `companyName`. This time, it says it `is defined as a const`. The next line of code tests this. So you need to make sure that you are using the correct type of variable declaration such that attempting to reassign the variable throws an error.
-+ `mostProfitableNeighborhood` - Here we need to declare another variable, `mostProfitableNeighborhood` and assign to it the string `'Chelsea'`. In the next `it` function call, you can see that you need to make sure that you are using the correct type of variable declaration such that assigning a new value to `mostProfitableNeighborhood` doesn't throw an error.
-+ `companyCeo` - Here, we are getting more practice with declaring variables. Once again, we want to use a variable declaration that allows reassignment.
+- `companyName` &mdash; Inside the `test/indexTest.js` file, look at the
+  `describe` function call for the `companyName` variable. The two `it` function
+  calls inside this `describe` tell us the features of `companyName` we need to
+  create. To review, in the first `it` function call, it says that `it`
+  (companyName) `is set as Scuber`. In the next line, you can see that the test
+  checks to make sure this occurs by seeing if `companyName` equals `Scuber`. So
+  this means that you need to go to your `index.js` file and declare a variable
+  named `companyName` and set it equal to `Scuber`.
+- In the second `it` function call for `companyName`, it says it `is defined as
+  a const`. The next line of code tests this. So you need to make sure that you
+  are using the correct type of variable declaration such that attempting to
+  reassign the variable throws an error.
+- `mostProfitableNeighborhood` and `companyCeo` &mdash; Here we are getting more
+  practice with declaring variables. Read the tests to see how you need to code
+  these two variables to get the remaining tests passing.
 
 ## Resources
 
-+ [MDN: Let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
-+ [MDN: Const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+- [MDN: Let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+- [MDN: Const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
