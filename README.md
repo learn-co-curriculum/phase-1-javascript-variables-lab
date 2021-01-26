@@ -2,12 +2,14 @@
 
 ## Learning Goals
 
-- Practice using the `const` and `let` variables in JavaScript
+- Practice using `const` and `let` to declare variables in JavaScript
 
 ## Instructions
 
-We've covered a lot of JavaScript concepts, but now it's time to put the
-concepts into practice. We'll start with variables.
+In this lab we'll practice declaring and assigning values to variables. We'll
+also go over how to read the test document. Understanding how to read the tests
+can be a valuable tool in figuring out exactly what you'll need to do to
+complete the lab.
 
 ### Tests
 
@@ -41,12 +43,8 @@ that matter, will still have CONTRIBUTING.md, LICENSE.md, and README.md files.)
 
 ### Code Along
 
-Open up `index.js` in your text editor. If you're using the Learn IDE, click the
-blue "Open" button in the top right hand corner of the lesson. If you open up
-that `js-basics-variables-lab/` directory, you'll see a list of files (along
-with a `test/` directory). Click `index.js`, and it will open in the editor.
-
-In `index.js`, you should see, well, nothing. We'll fix that soon.
+Open up `index.js` in your text editor; you should see, well, nothing. We'll fix
+that soon.
 
 Now open up `test/indexTest.js`. Hey, there's something! What's all of this
 stuff doing?
@@ -97,11 +95,10 @@ gather the information that you can. We will also provide instructions in the
 
 ## Running the Tests
 
-To run the tests, type `learn` or `learn test` in the terminal. (If you're using
-the IDE, the terminal is the part below where you've been coding.) You should
-now see the current status of the tests in the terminal. For the moment, all of
-the tests fail. Let's figure out how to get one of them passing! (The rest will
-be up to you.)
+To run the tests, type `learn` or `learn test` in the terminal. You should now
+see the current status of the tests in the terminal. For the moment, all of the
+tests fail. Let's figure out how to get one of them passing! (The rest will be
+up to you.)
 
 To get our first test to pass, we can open up our `index.js` file, and write the
 following:
@@ -122,8 +119,7 @@ for a lab:
 1. Run `learn`.
 2. Read the errors; vocalize what they're asking you to do.
 3. Write code; repeat steps 1 and 2 often until a test passes.
-4. Repeat as needed for further tests.
-5. Unless you're working in Canvas, run `learn submit` when finished!
+4. Repeat as needed until all the tests are passing.
 
 ## Working Through the Problems
 
