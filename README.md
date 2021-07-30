@@ -24,8 +24,8 @@ in charge of getting the tests to pass.
 
 ### Structure
 
-The structure of this lab &mdash; where its files and folders are located
-&mdash; looks roughly like the following:
+The structure of this lab — where its files and folders are located
+— looks roughly like the following:
 
 ``` text
 ├── CONTRIBUTING.md
@@ -110,7 +110,7 @@ let companyName = 'Scuber';
 If you run `learn` again, you'll see that our first test is now passing.
 However, the second test, which is also about `companyName`, is not yet passing.
 It's not passing because it expects `companyName` to be declared using a
-different keyword than the `let` keyword &mdash; it needs a keyword that is used
+different keyword than the `let` keyword — it needs a keyword that is used
 for variables that can't be changed...
 
 Continue to work through the problems below. Keep in mind the general workflow
@@ -125,7 +125,7 @@ for a lab:
 
 If you open up `test/indexTest.js`, you will see the tasks in front of you:
 
-- `companyName` &mdash; Inside the `test/indexTest.js` file, look at the
+- `companyName` — Inside the `test/indexTest.js` file, look at the
   `describe` function call for the `companyName` variable. The two `it` function
   calls inside this `describe` tell us the features of `companyName` we need to
   create. To review, in the first `it` function call, it says that `it`
@@ -137,7 +137,7 @@ If you open up `test/indexTest.js`, you will see the tasks in front of you:
   a const`. The next line of code tests this. So you need to make sure that you
   are using the correct type of variable declaration such that attempting to
   reassign the variable throws an error.
-- `mostProfitableNeighborhood` and `companyCeo` &mdash; Here we are getting more
+- `mostProfitableNeighborhood` and `companyCeo` — Here we are getting more
   practice with declaring variables. Read the tests to see how you need to code
   these two variables to get the remaining tests passing.
 
