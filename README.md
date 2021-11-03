@@ -146,4 +146,3 @@ If you open up `test/indexTest.js`, you will see the tasks in front of you:
 - [MDN: Let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 - [MDN: Const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
 
-## Extra stuff
