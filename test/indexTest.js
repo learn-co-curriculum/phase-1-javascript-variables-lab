@@ -1,13 +1,7 @@
-const chai = require('chai')
-const expect = chai.expect;
-const fs = require('file-system')
-const jsdom = require('mocha-jsdom')
+const fs = require('fs')
 const path = require('path')
-const babel = require('babel-core');
 
 const js = fs.readFileSync(path.resolve(__dirname, '..', 'index.js'), 'utf-8')
-
-
 
 describe('index.js', function () {
   describe('companyName', function () {
@@ -25,8 +19,8 @@ describe('index.js', function () {
       expect(mostProfitableNeighborhood).to.equal('Chelsea');
     });
 
-    it('does not raise error if the mostProfitableNeighborhood is changed', function () {
-      expect(function () { mostProfitableNeighborhood = 'Upper West Side' }).to.not.throw(TypeError);
+    it('is defined using let', function () {
+      expect(js).to.match(/let mostProfitableNeighborhood/, "Expected mostProfitableNeighborhood to be defined using let");
     });
   });
 
@@ -35,8 +29,8 @@ describe('index.js', function () {
       expect(companyCeo).to.equal('Susan Smith');
     });
 
-    it('does not raise error if the companyCeo is changed', function () {
-      expect(function () { companyCeo = 'Lauren Hart' }).to.not.throw(TypeError);
+    it('is defined using let', function () {
+      expect(js).to.match(/let companyCeo/, "Expected companyCeo to be defined using let");
     });
   });
 });
