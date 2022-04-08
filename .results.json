@@ -2,18 +2,18 @@
   "stats": {
     "suites": 4,
     "tests": 6,
-    "passes": 2,
+    "passes": 4,
     "pending": 0,
-    "failures": 4,
-    "start": "2022-04-08T09:04:50.212Z",
-    "end": "2022-04-08T09:04:50.683Z",
-    "duration": 471
+    "failures": 2,
+    "start": "2022-04-08T09:09:10.247Z",
+    "end": "2022-04-08T09:09:10.930Z",
+    "duration": 683
   },
   "tests": [
     {
       "title": "is set as Scuber",
       "fullTitle": "index.js companyName is set as Scuber",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -29,22 +29,14 @@
       "fullTitle": "index.js mostProfitableNeighborhood is declared as equal to Chelsea",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: mostProfitableNeighborhood is not defined\n    at Context.<anonymous> (test/indexTest.js:19:14)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "mostProfitableNeighborhood is not defined"
-      }
+      "err": {}
     },
     {
       "title": "is defined using let",
       "fullTitle": "index.js mostProfitableNeighborhood is defined using let",
-      "duration": 2,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "Expected mostProfitableNeighborhood to be defined using let: expected '// Code your solution in this file!\\nconst companyName = \\'Scuber\\'' to match /let mostProfitableNeighborhood/",
-        "showDiff": false,
-        "actual": "// Code your solution in this file!\nconst companyName = 'Scuber'",
-        "stack": "AssertionError: Expected mostProfitableNeighborhood to be defined using let: expected '// Code your solution in this file!\\nconst companyName = \\'Scuber\\'' to match /let mostProfitableNeighborhood/\n    at Context.<anonymous> (test/indexTest.js:23:21)\n    at processImmediate (node:internal/timers:466:21)"
-      }
+      "err": {}
     },
     {
       "title": "is declared as equal to Susan Smith",
@@ -59,41 +51,19 @@
     {
       "title": "is defined using let",
       "fullTitle": "index.js companyCeo is defined using let",
-      "duration": 0,
+      "duration": 2,
       "currentRetry": 0,
       "err": {
-        "message": "Expected companyCeo to be defined using let: expected '// Code your solution in this file!\\nconst companyName = \\'Scuber\\'' to match /let companyCeo/",
+        "message": "Expected companyCeo to be defined using let: expected '// Code your solution in this file!\\nconst companyName = \\'Scuber\\'\\n\\nlet mostProfitableNeighborhood = \\'Chelsea\\'\\n// mostProfitableNeighborhood === \\'Chelsea\\'' to match /let companyCeo/",
         "showDiff": false,
-        "actual": "// Code your solution in this file!\nconst companyName = 'Scuber'",
-        "stack": "AssertionError: Expected companyCeo to be defined using let: expected '// Code your solution in this file!\\nconst companyName = \\'Scuber\\'' to match /let companyCeo/\n    at Context.<anonymous> (test/indexTest.js:33:21)\n    at processImmediate (node:internal/timers:466:21)"
+        "actual": "// Code your solution in this file!\nconst companyName = 'Scuber'\n\nlet mostProfitableNeighborhood = 'Chelsea'\n// mostProfitableNeighborhood === 'Chelsea'",
+        "stack": "AssertionError: Expected companyCeo to be defined using let: expected '// Code your solution in this file!\\nconst companyName = \\'Scuber\\'\\n\\nlet mostProfitableNeighborhood = \\'Chelsea\\'\\n// mostProfitableNeighborhood === \\'Chelsea\\'' to match /let companyCeo/\n    at Context.<anonymous> (test/indexTest.js:33:21)\n    at processImmediate (node:internal/timers:466:21)"
       }
     }
   ],
   "pending": [],
   "failures": [
     {
-      "title": "is declared as equal to Chelsea",
-      "fullTitle": "index.js mostProfitableNeighborhood is declared as equal to Chelsea",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: mostProfitableNeighborhood is not defined\n    at Context.<anonymous> (test/indexTest.js:19:14)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "mostProfitableNeighborhood is not defined"
-      }
-    },
-    {
-      "title": "is defined using let",
-      "fullTitle": "index.js mostProfitableNeighborhood is defined using let",
-      "duration": 2,
-      "currentRetry": 0,
-      "err": {
-        "message": "Expected mostProfitableNeighborhood to be defined using let: expected '// Code your solution in this file!\\nconst companyName = \\'Scuber\\'' to match /let mostProfitableNeighborhood/",
-        "showDiff": false,
-        "actual": "// Code your solution in this file!\nconst companyName = 'Scuber'",
-        "stack": "AssertionError: Expected mostProfitableNeighborhood to be defined using let: expected '// Code your solution in this file!\\nconst companyName = \\'Scuber\\'' to match /let mostProfitableNeighborhood/\n    at Context.<anonymous> (test/indexTest.js:23:21)\n    at processImmediate (node:internal/timers:466:21)"
-      }
-    },
-    {
       "title": "is declared as equal to Susan Smith",
       "fullTitle": "index.js companyCeo is declared as equal to Susan Smith",
       "duration": 0,
@@ -106,13 +76,13 @@
     {
       "title": "is defined using let",
       "fullTitle": "index.js companyCeo is defined using let",
-      "duration": 0,
+      "duration": 2,
       "currentRetry": 0,
       "err": {
-        "message": "Expected companyCeo to be defined using let: expected '// Code your solution in this file!\\nconst companyName = \\'Scuber\\'' to match /let companyCeo/",
+        "message": "Expected companyCeo to be defined using let: expected '// Code your solution in this file!\\nconst companyName = \\'Scuber\\'\\n\\nlet mostProfitableNeighborhood = \\'Chelsea\\'\\n// mostProfitableNeighborhood === \\'Chelsea\\'' to match /let companyCeo/",
         "showDiff": false,
-        "actual": "// Code your solution in this file!\nconst companyName = 'Scuber'",
-        "stack": "AssertionError: Expected companyCeo to be defined using let: expected '// Code your solution in this file!\\nconst companyName = \\'Scuber\\'' to match /let companyCeo/\n    at Context.<anonymous> (test/indexTest.js:33:21)\n    at processImmediate (node:internal/timers:466:21)"
+        "actual": "// Code your solution in this file!\nconst companyName = 'Scuber'\n\nlet mostProfitableNeighborhood = 'Chelsea'\n// mostProfitableNeighborhood === 'Chelsea'",
+        "stack": "AssertionError: Expected companyCeo to be defined using let: expected '// Code your solution in this file!\\nconst companyName = \\'Scuber\\'\\n\\nlet mostProfitableNeighborhood = \\'Chelsea\\'\\n// mostProfitableNeighborhood === \\'Chelsea\\'' to match /let companyCeo/\n    at Context.<anonymous> (test/indexTest.js:33:21)\n    at processImmediate (node:internal/timers:466:21)"
       }
     }
   ],
@@ -120,13 +90,27 @@
     {
       "title": "is set as Scuber",
       "fullTitle": "index.js companyName is set as Scuber",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "is defined as a const",
       "fullTitle": "index.js companyName is defined as a const",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "is declared as equal to Chelsea",
+      "fullTitle": "index.js mostProfitableNeighborhood is declared as equal to Chelsea",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "is defined using let",
+      "fullTitle": "index.js mostProfitableNeighborhood is defined using let",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
