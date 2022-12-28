@@ -43,8 +43,9 @@ that matter, will still have CONTRIBUTING.md, LICENSE.md, and README.md files.)
 
 ### Code Along
 
-Open up `index.js` in your text editor; you should see, well, nothing. We'll fix
-that soon.
+**Fork and clone** this lesson's repo to your local environment, then open up
+`index.js` in your text editor; you should see, well, nothing. We'll fix that
+soon.
 
 Now open up `test/indexTest.js`. Hey, there's something! What's all of this
 stuff doing?
@@ -95,10 +96,10 @@ gather the information that you can. We will also provide instructions in the
 
 ## Running the Tests
 
-To run the tests, type `learn test` in the terminal. You should now see the
-current status of the tests in the terminal. For the moment, all of the tests
-fail. Let's figure out how to get one of them passing! (The rest will be up to
-you.)
+Start by installing the test dependencies by running `npm install` in the
+terminal, then run `npm test` to run the tests. You should now see the current
+status of the tests in the terminal. For the moment, all of the tests fail.
+Let's figure out how to get one of them passing! (The rest will be up to you.)
 
 To get our first test to pass, we can open up our `index.js` file, and write the
 following:
@@ -107,7 +108,7 @@ following:
 let companyName = 'Scuber';
 ```
 
-If you run `learn test` again, you'll see that our first test is now passing.
+If you run `npm test` again, you'll see that our first test is now passing.
 However, the second test, which is also about `companyName`, is not yet passing.
 It's not passing because it expects `companyName` to be declared using a
 different keyword than the `let` keyword — it needs a keyword that is used for
@@ -116,10 +117,13 @@ variables that can't be changed...
 Continue to work through the problems below. Keep in mind the general workflow
 for a lab:
 
-1. Run `learn test`.
+1. Run `npm test`.
 2. Read the errors; vocalize what they're asking you to do.
 3. Write code; repeat steps 1 and 2 often until a test passes.
 4. Repeat as needed until all the tests are passing.
+
+Once you have all the tests passing, commit and push your changes to GitHub,
+then submit your work using CodeGrade.
 
 ## Working Through the Problems
 
