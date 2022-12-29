@@ -43,9 +43,39 @@ that matter, will still have CONTRIBUTING.md, LICENSE.md, and README.md files.)
 
 ### Code Along
 
-**Fork and clone** this lesson's repo to your local environment, then open up
-`index.js` in your text editor; you should see, well, nothing. We'll fix that
-soon.
+This lesson is set up as a code-along, so you'll first need to **fork and
+clone** it to your local environment.
+
+**Quick Review:**
+
+**1.** Click the **Octocat** icon in the upper right of this page. This will
+bring you to GitHub. Click the **Fork** button. If necessary, select your
+personal GitHub account as the Owner of the new fork, then click the **Create
+fork** button.
+
+**2.** Once your fork is created, click the **Code** button in GitHub, make sure
+**SSH** is selected, and copy the provided git URL info.
+
+**3.** Make sure you're in `Development/code/phase-1` (or wherever you're
+storing your code for the course) and clone the repo to your local machine with
+`git clone` followed by the git URL you copied.
+
+```console
+$ git clone git@github.com:your-github-username/phase-1-javascript-variables-lab.git
+```
+
+**4.** The previous command will create a folder in the `phase-1` folder
+containing your fork of this lab's repository. `cd` into the repository that you
+just cloned down in the terminal, then run `code .` to open the files in Visual
+Studio Code.
+
+```console
+$ cd phase-1-javascript-variables-lab
+$ code .
+```
+
+Open up `index.js` in your code editor; you should see, well, nothing. We'll fix
+that soon.
 
 Now open up `test/indexTest.js`. Hey, there's something! What's all of this
 stuff doing?
@@ -122,8 +152,26 @@ for a lab:
 3. Write code; repeat steps 1 and 2 often until a test passes.
 4. Repeat as needed until all the tests are passing.
 
-Once you have all the tests passing, commit and push your changes to GitHub,
-then submit your work using CodeGrade.
+Once you have all the tests passing, commit and push your changes to your fork
+of the lab on GitHub using the `git add`, `git commit`, and `git push` commands.
+
+Finally, submit your work using CodeGrade:
+
+1. Scroll to the bottom of this lesson page in Canvas and click the button
+   labeled "Load Review: Variables Lab in a new window".
+2. In the CodeGrade window that opens, click "Create Submission". You should now
+   see a list of your repositories.
+3. Find the repo for this lesson and click Connect.
+4. When you get the message that your repo has been connected, click on the
+   embedded link, then the "AutoTest" tab. After a few moments, you should see
+   the green checkmark in the "Pass" column, indicating that you've successfully
+   submitted the lesson.
+
+Refer back to the [Completing and Submitting Assignments with
+CodeGrade][completing-lesson] lesson if you need a refresher on committing and
+pushing with git or submitting with CodeGrade.
+
+[completing-lesson]: https://github.com/learn-co-curriculum/phase-1-completing-assignments-with-codegrade
 
 ## Working Through the Problems
 
