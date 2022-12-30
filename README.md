@@ -49,8 +49,8 @@ clone** it to your local environment.
 **Quick Review:**
 
 **1.** Click the **Octocat** icon in the upper right of this page. This will
-bring you to GitHub. Click the **Fork** button. If necessary, select your
-personal GitHub account as the Owner of the new fork, then click the **Create
+bring you to GitHub. Click the **Fork** button. Verify that your GitHub username
+is showing in the **Owner** dropdown, then click the **Create
 fork** button.
 
 **2.** Once your fork is created, click the **Code** button in GitHub, make sure
@@ -152,27 +152,6 @@ for a lab:
 3. Write code; repeat steps 1 and 2 often until a test passes.
 4. Repeat as needed until all the tests are passing.
 
-Once you have all the tests passing, commit and push your changes to your fork
-of the lab on GitHub using the `git add`, `git commit`, and `git push` commands.
-
-Finally, submit your work using CodeGrade:
-
-1. Scroll to the bottom of this lesson page in Canvas and click the button
-   labeled "Load Review: Variables Lab in a new window".
-2. In the CodeGrade window that opens, click "Create Submission". You should now
-   see a list of your repositories.
-3. Find the repo for this lesson and click Connect.
-4. When you get the message that your repo has been connected, click on the
-   embedded link, then the "AutoTest" tab. After a few moments, you should see
-   the green checkmark in the "Pass" column, indicating that you've successfully
-   submitted the lesson.
-
-Refer back to the [Completing and Submitting Assignments with
-CodeGrade][completing-lesson] lesson if you need a refresher on committing and
-pushing with git or submitting with CodeGrade.
-
-[completing-lesson]: https://github.com/learn-co-curriculum/phase-1-completing-assignments-with-codegrade
-
 ## Working Through the Problems
 
 If you open up `test/indexTest.js`, you will see the tasks in front of you:
@@ -192,6 +171,64 @@ If you open up `test/indexTest.js`, you will see the tasks in front of you:
 - `mostProfitableNeighborhood` and `companyCeo` — Here we are getting more
   practice with declaring variables. Read the tests to see how you need to code
   these two variables to get the remaining tests passing.
+
+## Submitting Your Work to Canvas
+
+Once you've got all the tests passing, it's time to push your completed code up
+to GitHub and submit it to Canvas using CodeGrade. We'll do a quick review of
+how to do that below, but you may want to review the full process in the
+[Completing and Submitting Assignments with CodeGrade][completing-codegrade]
+lesson. You'll be going through this process for every lab you do in this
+program!
+
+[completing-codegrade]: https://github.com/learn-co-curriculum/phase-1-completing-assignments-with-codegrade
+
+Let's review the process. First, you need to "stage" your changes using the `git
+add` command:
+
+```console
+$ git add index.js
+```
+
+or
+
+```console
+$ git add .
+```
+
+Recall that the `.` shortcut will stage **all** files that have changes. In this
+case there's only one so either command will work.
+
+Next, you need to "commit" your changes, which basically saves a record of the
+changes you've made. Don't forget to use the `-m` flag and include a commit
+message! Use the message shown below or choose your own:
+
+```console
+$ git commit -m "complete lab"
+```
+
+Finally, push your changes up to your GitHub account (your fork of this lab):
+
+```console
+$ git push
+```
+
+If you go back to your repo in GitHub and refresh the page, you should now see a
+new commit with your commit message.
+
+The final step is to submit your work to Canvas:
+
+1. Scroll to the bottom of this lesson page in Canvas and click the button
+   labeled "Load Review: Variables Lab in a new window".
+2. In the CodeGrade window that opens, click "Create Submission". You should now
+   see a list of your repositories.
+3. Find the repo for this lab and click Connect.
+4. When you get the message that your repo has been connected, click on the
+   embedded link, then the "AutoTest" tab to watch your progress. Once the tests
+   have finished running, you should see the green checkmark in the "Pass"
+   column, indicating that you've successfully completed the lab.
+
+![CodeGrade window showing tests have all been passed](https://curriculum-content.s3.amazonaws.com/phase-0/completing-assignments-codegrade/codegrade-tests-passing.png)
 
 ## Resources
 
