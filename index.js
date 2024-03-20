@@ -1,11 +1,10 @@
 // Code your solution in this file!
-const myName = 'collins njuguna';
-console.log(myName);
+let companyName = 'scuber';
+console.log(companyName);
 
+let mostProfitableNeighborhood = 'chelsea';
+console.log(mostProfitableNeighborhood);
+  
 
-let myName2 = 'collins njuguna';
-console.log(myName2);
-
-
-myName2 = 'collins';
-console.log(myName2);
+const companyCeo='susan smith';
+console.log(companyCeo);
